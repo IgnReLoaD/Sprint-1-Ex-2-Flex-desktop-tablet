@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name = "description" content = "pagina web de estudio y repaso">
+        <meta name = "author"      content = "Alumno IT Academy BcnActiva">
+        <meta name = "keywords"    content = "repaso estilos Flex Layout y MediaQuery">     
+        <title>Sprint-1-Ex-2</title>
+        <link rel="stylesheet" href="styles.css">          
+    </head>
+    <body>
+        <div id="content" class="flex-vertical">
+
+            <header class="flex-vertical">
+                <hgroup id="header-sup" class="flex-horizontal">
+                    <div id="header-left" class="lateral">  &nbsp; </div>
+                    <div id="header-center" class="central">&nbsp; </div>
+                    <div id="header-right" class="lateral"> &nbsp; </div>
+                </hgroup>
+                <hgroup id="header-inf" >
+                    <div id="header-center-inf"> &nbsp; </div>
+                </hgroup>
+            </header>        
+            
+            <main class="container flex-horizontal">
+                <article class="flex-vertical">
+                    <section class="art-corto, flex-2-cols">
+                        <post class="art-corto"> &nbsp; </post>
+                        <post class="art-corto"> &nbsp; </post>
+                    </section>
+                    <section class="flex-2-cols">
+                        <post class="art-corto"> &nbsp; </post>
+                        <post class="art-corto"> &nbsp; </post>
+                    </section>
+                    <section class="flex-1-col">
+                        <post class="art-largo"> &nbsp; </post>
+                    </section>                    
+                </article>
+
+                <aside>
+                    <section class="flex-vertical-dalt">
+                        <p class="aside-item"> &nbsp; </p>
+                        <p class="aside-item"> &nbsp; </p>
+                    </section>
+                    
+                </aside>
+            </main>
+
+            <footer>
+                <p> &nbsp; </p>
+            </footer>
+        </div>
+    </body>
+</html>

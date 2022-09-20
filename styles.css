@@ -1,0 +1,232 @@
+/* ====== ESTILS PER MIDA DESKTOP =========================*/
+
+/* ----- ZONA DEBUGGER -----*/
+
+/*  activem borders de les peces per debugar */
+/* 
+    * {    
+        /* border-style: solid;   
+        border-width: 0.2px;     
+        border-color: hotpink;  
+    }
+*/
+
+/* ----- ZONA GENERAL ----- */
+#content {
+    height: 360px;
+    max-width: 1200px;
+}
+
+.flex-vertical {
+    display: flex;              
+    flex-direction: column;          
+    justify-content: space-around;     
+}
+
+.flex-horizontal {
+    display: flex;              
+    flex-direction: row;          
+    justify-content: space-between;
+}
+
+/* ----- ZONA HEADER ----- */
+
+header {
+    border-style: solid;
+    border-color: black;
+    border-width: 15px;
+    background-color: black;
+    margin-bottom: 20px;
+    display: flex;
+    height: 85px;
+}
+
+.lateral {
+    width: 15%;
+    border-color: #40465a;
+}
+
+.central {
+    width: 65%;
+    border-color: #40465a
+}
+
+#header-sup {
+    background-color: #40465a;
+    border-color: #40465a;
+    border-width: 10px;
+    border-style: solid;
+    margin: 0px;
+}
+
+#header-inf {
+    border-color: #e47e3b;
+    border-width: 10px;
+    border-style: solid;
+    background-color: #eed461;
+    margin: 0px;
+}
+
+#header-left {
+    background-color: #fd5353;
+    border-color: #40465a;
+    border-width: 10px;
+}
+
+#header-center {
+    background-color: #fd5353;
+    border-color: #40465a;
+    border-width: 10px;
+}
+
+#header-right {
+    background-color: #fd5353;
+    border-color: #40465a;
+    border-width: 10px;
+}
+
+#header-center-inf {
+    background-color: #eed461;
+    border-color: #e47e3b;
+    border-width: 10px;
+}
+
+/* ----- ZONA MAIN ----- */
+
+main {
+    border-style: solid;
+    border-color: black;
+    border-width: 15px;
+    margin-bottom: 20px;
+    height: 120px;   
+    background-color: black;
+}
+
+article {
+    border-style: solid;
+    border-color: #40465a;
+    background-color: #40465a;
+    border-width: 15px;  
+    width: 63%;   
+    height: 90px;   
+}
+
+aside {
+    width: 31%;
+    background-color: #fd5353;
+    height: 120px;
+}
+
+aside > section {
+    height: 145px;  
+    width: 100%;
+    align-self: left;
+    margin-top: 10px; 
+}
+
+aside > section > p {
+    background-color: #eed461;
+    margin: 0px 7px 7px 7px;
+}
+
+.flex-vertical-dalt {
+    display: flex;
+    flex-direction: column;
+    align-self: auto;
+    /* align-items: flex-start; */
+}
+
+main > article > section {
+    width: 100%;
+    background-color: #40465a;
+}
+
+.art-corto {
+    width: 48%;
+    background-color:#1465b1;
+}
+
+.art-largo {
+    width: 100%;
+    background-color:#79b0e4;
+}
+
+.flex-2-cols {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flex-1-col {
+    display: flex;
+    align-self: auto;
+}
+
+footer {
+    border-style: solid;
+    border-color: black;
+    border-width: 15px;
+    margin-bottom: 5px;
+}
+
+/* ----- ZONA FOOTER ----- */
+
+footer > p {
+    background-color: #eed461;
+    border-width: 0px;
+    margin: 0px;
+}
+
+.aside-item {
+    margin-top: 5px;
+}
+
+/* --------- zona Media Query - pantalla menor o igual a 820px ANCHO ------------ */
+@media only screen and (max-width: 820px) {
+
+    #content {
+        height: 500px;
+    }
+
+    main {
+        display: flex;              
+        /* flex-direction: column !important;  OJO! ESTA LINEA LO JODE TODO */
+        flex-wrap: wrap;
+        justify-content: space-between; 
+        background-color: yellow;
+        border-color: yellow;
+        height: 300px;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 120px;
+    }
+
+    aside {
+        width: 100%;
+        height: 95px;
+        margin-top: 15px;
+    }
+    
+    aside > section {
+        margin-left: 10px;
+        margin-right:10px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        height: 90px;
+        width: auto;
+    }
+
+    .aside-item {
+        height: 23px;
+    }
+
+    main > article > section {
+        width: 100%;    
+        height: 23px;    
+    }
+    
+}
